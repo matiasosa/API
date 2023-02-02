@@ -1,0 +1,12 @@
+Functions description of the tokens API
+
+*this API is referenced to the strings API*
+
+We call token to a substring of a string S that contains a separator C, which let us distinguish between a token and another.
+
+tokenCount: takes string S, char C and returns the number of tokens in S.
+addToken: takes string& S, char C, string T and add token T at the end of S.
+getTokenAt: takes string S, char C, int i and returns the token at position i in S.
+removeTokenAt: takes string& S, char C, int i and delete the token at position I in S.
+setTokenAt: takes string& S, char C, string T, int i and puts the token T at the i-th position in S.
+findToken: takes string S, char C, string T and returns the position of the fist appearance of T in S.
