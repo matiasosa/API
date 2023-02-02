@@ -1,0 +1,51 @@
+Functions description of the strings API
+
+*most of the functions of this API receives a string S as its first parameter  (if not, it has a disclaimer)*
+
+length: returns the length.
+charCount: takes char C and returns the amount of times the C is in S.
+subString: takes int D, int H, and returns the substring between positions D and H (not included).
+subString: takes int D and returns the substring between D and the end of S.
+indexOf: takes char C and returns the position of the first C in S (if C not in S, returns a neg value).
+indexOf: takes char C, int O and returns the position of C in S with O as an offset.
+indexOf: takes string A and returns the position of the first appearance of A in S.
+indexOf: takes string A, int O and returns the position of A in S with O as an offset.
+lastIndexOf: takes char C and returns the last appearance of C in S.
+indexOfN: takes char C, int N and returns the N-th appearance of C in S (N > #C(appearances)? returns length of S).
+charToInt: takes char C and returns its numeric value (works with hexadecimal numbers). /does not receive a string S/ 
+intToChar: takes int N and returns the char that N represents (works with hexadecimal numbers). /does not receive a string S/
+getDigit: takes int N, int i and returns the i-th  digit of N. /does not receive a string S/
+digitCount: takes int N and returns the amount of digits it contains. /does not receive a string S/
+intToString: takes int N and returns N as a string. /does not receive a string S/
+stringToInt: takes int B and returns S as an int int base B.
+stringToInt: returns S as an int in base 10.
+charToString: takes char C and returns a string with the char C. /does not receive a string S/
+stringToChar: returns its only character as a char.
+stringToString: takes string S and returns it as a string (this function makes sense with the use of the TAD 'Coll').
+doubleToString: takes double D and returns its value as a string. /does not receive a string S/
+stringToDouble: returns it as a double.
+isEmpty: and returns true if it's empty.
+startsWith: string A and returns true if it starts with A.
+endsWith: string A and returns true if it ends with A.
+contains: char C and returns true if it contains C.
+replace: char C, char X and replaces C for X in S.
+insertAt: int P, char C and inserts C at position P in S.
+removeAt: int P and removes the char at position P in S.
+ltrim: returns S after removing the spaces at its left.
+rtrim: returns S after removing the spaces at its right.
+trim: returns S after removing the spaces at left and right.
+replicate: takes char C, int N and returns a string with C, N times. /does not receive a string S/
+spaces: takes int N and returns a string of N spaces (\'93 \'93). /does not receive a string S/
+lpad: takes int N, char C and returns S after concatenating at its left C the times it\'92s necessary for S to be length N.
+rpad: takes int N, char C and returns S after concatenating at its right C the times it\'92s necessary for S to be length N.
+cpad: takes int N, char C and returns S after concatenating at its left and right C the times it\'92s necessary for S to be length N.
+isDigit: takes char C and returns true if its a number. /does not receive a string S/
+isLetter: takes char C and returns true if its a letter. /does not receive a string S/
+isUpperCase: takes char C and returns true if its upper case. /does not receive a string S/
+isLowerCase: takes char C and returns true if its lower case. /does not receive a string S/
+toUpperCase: takes char C and returns it in upper case. /does not receive a string S/
+toLowerCase: takes char C and returns it in lower case. /does not receive a string S/
+toUpperCase: returns S in upper case.
+toLowerCase: returns S in lower case.
+cmpString: takes string A, string B and returns a negative value if A is alphabetically smaller than B, positive if A is bigger and 0 if A = B. /does not receive a string S/
+cmpDouble: takes double A, double B and returns a negative value if A is smaller than B, positive if A is bigger and 0 if A = B. /does not receive a string S/
