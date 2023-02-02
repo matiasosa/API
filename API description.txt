@@ -1,0 +1,6 @@
+C++ API
+Strings
+Tokens
+Files
+Arrays
+Lists (stack and queue)
