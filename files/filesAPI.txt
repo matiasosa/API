@@ -1,0 +1,12 @@
+Functions description of the files API
+
+This functions are just for simplifying the use of tedious standard files functions.
+
+*every function takes a pointer to a file f (FILE* f) as its argument*
+*we use the type of data T because of the implementation of templates which allows us to use structs*
+
+write: takes T t and writes t in the actual position of the file.
+read: returns the structure or register that has been read.
+seek: takes int N and moves the position indicator to the start of the N-th register in the file.
+fileSize: returns the amount of registers of type T in the file.
+filePos: returns the number of the register pointed by the position indicator.
