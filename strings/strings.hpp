@@ -287,20 +287,20 @@ string stringToString(string s)
    return s;
 }
 
-string doubleToString(double d)
-{//123,45
-//   int k=0, j=0;
-//   string ent = intToString(d);
-//   int ent2 = stringToInt(ent);
-//   double dec = d*10;
-//   while(getDigit(dec,(digitCount(d))-1+k)!=0)
-//   {
-//      dec = dec * 10;
-//      k++;
-//   }
-//   j = ent2*k;
-//   string p = intToString(j);
-//   ent = ent + '.' + p;
+string doubleToString(double d) //does not work well
+{
+   int k=0, j=0;
+   string ent = intToString(d);
+   int ent2 = stringToInt(ent);
+   double dec = d*10;
+   while(getDigit(dec,(digitCount(d))-1+k)!=0)
+   {
+      dec = dec * 10;
+      k++;
+   }
+   j = ent2*k;
+   string p = intToString(j);
+   ent = ent + '.' + p;
    return 0;
 
 }
