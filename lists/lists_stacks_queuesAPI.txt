@@ -1,0 +1,33 @@
+Functions description of the linked lists API
+
+*the Node structure is declared as follows -
+T info //being the data field of the node
+Node<T>* sig //a pointer to the next type T node*
+
+*every function takes a pointer to a node Node<T>* p, if not, it is disclaimed*
+*the comparison function cmpInt(int a, int b) returns a-b*
+
+add: takes T e, adds the element e at the end of the list of p and returns a pointer to the node that contains e.
+addFirst: takes T e, add the element e at the start of the list of p and returns a pointer to the node that contains e.
+remove: takes K k, cmpTK(T,K), removes the first appearance of k using cmpTK in the list and returns the info of the node that has been removed.
+removeFirst: removes the first node and returns its info field.
+find: takes K k, cmpTK(T,K) and returns the address of the first node that contains k.
+orderedInsert: takes K k, cmp(T,K), inserts k in the list of p based on the cmpTK criteria and returns its address.
+searchAndInsert: takes T e, bool& b, cmpTT(T,T) search in the list of p the first node that contains e and returns its direction. If e isn't in the list, it inserts it sorted by cmpTT and returns its address. b will be true only if e is founded.
+sort: takes cmpTT and sorts the list directed by p, using cmpTT's sort method.
+isEmpty: returns true if the list is empty.
+free: frees the memory used by the list and assigns p to NULL.
+
+
+Functions description of the stacks API
+
+push: takes T e, inserts a node that contains e in the stack and returns its address.
+pop: removes the last node and returns the element it contained.
+
+
+Functions description of the lists API
+
+enqueue: takes Node<T>* q (last element of the list), T e, adds e to the end of the queue and returns its address.
+enqueue (overloaded): takes Node<T>* q, T e, inserts e at the end of the circular linked list directed by q and returns its address. /does not take Node<T>* p/
+dequeue: takes Node<T>* q, removes the first node of the queue and returns the element in it.
+dequeue (overloaded): takes Node<T>* q, removes the first node of the circular linked list directed by q and returns the element in it. /does not take Node<T>* p/
