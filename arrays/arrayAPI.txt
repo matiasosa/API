@@ -1,0 +1,12 @@
+Functions description of the arrays API
+
+*every function takes a type T array arr and an int& length and use templates*
+
+add: takes T t and inserts t to the end of arr.
+insert: takes T t, int i and inserts t at position i of arr.
+remove: takes int i and deletes the element at position i.
+find: takes K k, int cmpTK(T, K) and returns the pos of the first appearance of K in arr or a negative value. /len is not passed by reference/ 
+orderedInsert: takes T e, int cmpTT(T, T) and inserts e in arr based on the cmpTT criteria.
+sort: takes int cmpTT(T, T) and sorts arr based on cmpTT sort precedence mode.
+
+cmpTK(T, K) is a function that specifies the search form that is being used. 
