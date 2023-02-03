@@ -9,12 +9,12 @@ Node<T>* sig //a pointer to the next type T node*
 
 add: takes T e, adds the element e at the end of the list of p and returns a pointer to the node that contains e.
 addFirst: takes T e, add the element e at the start of the list of p and returns a pointer to the node that contains e.
-remove: takes K k, cmpTK(T,K), removes the first appearance of k using cmpTK in the list and returns the info of the node that has been removed.
+remove: takes K k, int cmpTK(T,K), removes the first appearance of k using cmpTK in the list and returns the info of the node that has been removed.
 removeFirst: removes the first node and returns its info field.
-find: takes K k, cmpTK(T,K) and returns the address of the first node that contains k.
-orderedInsert: takes K k, cmp(T,K), inserts k in the list of p based on the cmpTK criteria and returns its address.
-searchAndInsert: takes T e, bool& b, cmpTT(T,T) search in the list of p the first node that contains e and returns its direction. If e isn't in the list, it inserts it sorted by cmpTT and returns its address. b will be true only if e is founded.
-sort: takes cmpTT and sorts the list directed by p, using cmpTT's sort method.
+find: takes K k, int cmpTK(T,K) and returns the address of the first node that contains k.
+orderedInsert: takes K k, int cmp(T,K), inserts k in the list of p based on the cmpTK criteria and returns its address.
+searchAndInsert: takes T e, bool& b, int cmpTT(T,T) search in the list of p the first node that contains e and returns its direction. If e isn't in the list, it inserts it sorted by cmpTT and returns its address. b will be true only if e is founded.
+sort: takes int cmpTT(T,T) and sorts the list directed by p, using cmpTT's sort method.
 isEmpty: returns true if the list is empty.
 free: frees the memory used by the list and assigns p to NULL.
 
