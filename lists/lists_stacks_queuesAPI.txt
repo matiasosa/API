@@ -31,3 +31,5 @@ enqueue: takes Node<T>* q (last element of the list), T e, adds e to the end of 
 enqueue (overloaded): takes Node<T>* q, T e, inserts e at the end of the circular linked list directed by q and returns its address. /does not take Node<T>* p/
 dequeue: takes Node<T>* q, removes the first node of the queue and returns the element in it.
 dequeue (overloaded): takes Node<T>* q, removes the first node of the circular linked list directed by q and returns the element in it. /does not take Node<T>* p/
+
+int cmpTK(T t, K k) is a function that specifies the search form that is being used.
